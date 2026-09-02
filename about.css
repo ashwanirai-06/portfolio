@@ -1,0 +1,193 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Arial,sans-serif;
+background:#fafafa;
+color:#202020;
+}
+
+.page{
+width:90%;
+max-width:1100px;
+margin:auto;
+}
+
+a{
+text-decoration:none;
+}
+
+header{
+height:80px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+border-bottom:1px solid #e5e5e5;
+}
+
+header h2{
+font-size:20px;
+letter-spacing:2px;
+}
+
+nav{
+display:flex;
+gap:28px;
+}
+
+nav a{
+font-size:13px;
+color:#777;
+transition:.2s;
+}
+
+nav a:hover,
+nav a.active{
+color:#1d4ed8;
+}
+
+.hire-btn{
+background:#202020;
+color:#fff;
+padding:11px 20px;
+font-size:12px;
+transition:.2s;
+}
+
+.hire-btn:hover{
+background:#1d4ed8;
+}
+
+.about{
+min-height:650px;
+padding:80px 0;
+display:grid;
+grid-template-columns:40% 60%;
+gap:60px;
+align-items:center;
+}
+
+.photo{
+background:#eee;
+padding:10px;
+}
+
+.photo img{
+width:100%;
+height:500px;
+object-fit:cover;
+display:block;
+}
+
+.small-title{
+font-size:11px;
+font-weight:bold;
+letter-spacing:2px;
+color:#1d4ed8;
+}
+
+.about-content h1{
+font-size:50px;
+line-height:1.1;
+margin:12px 0 25px;
+}
+
+.intro,
+.text{
+color:#666;
+font-size:15px;
+line-height:1.8;
+}
+
+.text{
+margin-top:15px;
+}
+
+.philosophy{
+border-top:1px solid #ddd;
+margin-top:35px;
+padding-top:20px;
+}
+
+.philosophy h3{
+font-size:11px;
+color:#1d4ed8;
+letter-spacing:1px;
+margin-bottom:15px;
+}
+
+.philosophy ul{
+padding-left:18px;
+}
+
+.philosophy li{
+margin:9px 0;
+color:#444;
+}
+
+footer{
+border-top:1px solid #e5e5e5;
+padding:28px 0;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+footer h2{
+font-size:16px;
+}
+
+footer p,
+footer a{
+font-size:12px;
+color:#777;
+}
+
+footer a{
+margin-left:18px;
+transition:.2s;
+}
+
+footer a:hover{
+color:#1d4ed8;
+}
+
+@media(max-width:700px){
+
+header{
+height:auto;
+padding:20px 0;
+flex-wrap:wrap;
+gap:18px;
+}
+
+nav{
+order:3;
+width:100%;
+justify-content:center;
+gap:18px;
+}
+
+.about{
+grid-template-columns:1fr;
+padding:60px 0;
+}
+
+.about-content h1{
+font-size:40px;
+}
+
+.photo img{
+height:400px;
+}
+
+footer{
+flex-direction:column;
+align-items:flex-start;
+gap:15px;
+}
+
+}
